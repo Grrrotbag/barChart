@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --apricot: #ffcdb2ff;
+  --old-lavender: #6d6875ff;
+  --dark-sea-green: #84b082ff;
+  --independence: #3d405bff;
+}
+
+.main {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Inter";
+  background-color: var(--old-lavender);
+  background-size: 64px 128px;
+}
+
+svg {
+  stroke: 1px solid var(--independence);
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.5), 0 5px 5px 0 rgba(0, 0, 0, 0.5);
+  display: block;
+  margin: auto;
+  font-family: "Inter", sans-serif;
+  background-color: white;
+  border-radius: 25px;
+}
+
+#x-axis path {
+  stroke: black;
+  stroke-width: 1;
+  fill: none;
+}
+
+#y-axis path {
+  stroke: black;
+  stroke-width: 1;
+  fill: none;
+}
+
+#y-axis text,
+#x-axis text {
+  font-size: 1.4em;
+}
+
+h1 {
+  font-family: "Inter";
+  font-size: 3em;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 2em;
+  color: var(--apricot);
+}
+
+.bar {
+  fill: var(--dark-sea-green);
+}
+
+.bar:hover {
+  fill: var(--independence);
+}
+
+#tooltip {
+  position: absolute;
+  font-family: Inter, sans-serif;
+  display: none;
+  min-width: 80px;
+  height: auto;
+  background: none repeat scroll 0 0 var(--independence);
+  border-radius: 5px;
+  padding: 14px;
+  text-align: left;
+  color: var(--apricot);
+}
